@@ -1,0 +1,261 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+header('location:log.php');
+}
+?>
+
+<html>
+  </head>
+  <style>
+
+        .field{
+        background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-simple-wind-medical-background-cross-image_66658.jpg" );
+        background-repeat:no-repeat;
+        background-position:center;
+        margin:50px;
+        padding:10px 10px;
+        background-size:cover;
+        }
+   .field1{
+        background-image:url("https://c4.wallpaperflare.com/wallpaper/636/636/890/line-strip-grey-background-wallpaper-preview.jpg" );
+        background-repeat:no-repeat;
+        background-position:center;
+        padding:5px 5px;
+        background-size:cover;
+        }
+        legend{
+        background-color:brown;
+        color:white;
+        padding:5px 10px;
+        }
+
+        input{
+        margin:5px;
+        }
+        input[type=text], select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-FAMILY:URW Chancery L,cursive;
+        }
+        input[type=password], select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-FAMILY:URW Chancery L,cursive;
+        }
+
+        input[type=number], select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-FAMILY:DejaVu Sans Mono,momospace;
+        }
+        
+        textarea{
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-FAMILY:DejaVu Sans Mono,momospace;
+        }
+
+        input[type=Email], select {
+        width: 100%;
+        padding: 8px 8px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-FAMILY:DejaVu Sans Mono,momospace;
+        }
+        button{
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 4px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-FAMILY:Comic Sans MS,Comic Sans,Cursive;
+        }
+
+
+
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-FAMILY:Gill Sans,sans-serif;
+  }
+
+
+h3{
+  color: orange;
+  text-shadow: 2px 2px 4px #000000;
+  font-FAMILY:Gill Sans,sans-serif;
+}
+
+
+.inner2{
+          width:100%;
+          height:15%;
+          backgroun-color:silver;
+          color:yellow;
+         }
+
+
+a{
+color:white;
+text-shadow: 2px 2px 4px #000000;
+font-FAMILY:Gill Sans,sans-serif;
+}
+
+
+  .inner1{
+         width:100%;
+         height:5%;
+         background-color:none;
+         color:silver;
+
+        }
+
+
+BODY{
+   background-image:url("https://www.wallpaperup.com/uploads/wallpapers/2019/05/11/1323055/ec12b87d98ebec8daa4df4f8b61856c5-700.jpg" );
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-attachment:fixed;
+}
+</style>
+</head>
+<fieldset class="field1" >
+    <div class="inner1">
+    <pre><marquee><h3>
+       EVERYDAY AT 9:00 AM TO 9:00 PM           BUT FOR EMERGENCY SEVICES="IT WILL OPEN 24 HOURS(CRITICAL CONDITION PATIENTS ALLOWED)"        NEAR IIM 263254 GORAKHPUR UTTERPRADESH  </h3></marquee>   
+    </pre>
+    </div>
+    <div class="inner2">
+    <table width="100%" height="5%">
+    <tr>
+    <td width="15%">
+    &nbsp;<img src="https://marketplace-assets-production.s3-us-west-2.amazonaws.com/vault/items/preview-57bac524-6254-4fc8-a395-671c0a14153b-6MOww.jpg" width="100%">
+    </td>
+    <td width="35%">
+    &nbsp;<h1>Medicative</h1>
+    </td>
+    <td width="50%">
+    <a href="doctor.php"> HOME </a>
+    &nbsp;&nbsp;<a href="ABOUT US.php"> ABOUT PROJECT </a>
+    &nbsp;&nbsp;<a href="https://cpanel.epizy.com/panel/indexpl.php?id=32800d6bfc51cd8fd3d62b30ff8b2388ad272ade"> PATIENT DETAILS </a>
+    &nbsp;&nbsp;<a href="Ayush.php"> CONTACT US </a>
+    </td>
+</tr>
+</table>
+
+</div><br>
+</fieldset>
+<body>
+
+<strong><body></strong>
+<table width="100%">
+    <tr>
+       <td width="20%"></td>
+       <td width="30%"><h1><strong><u>DOCTOR <br>APPOINTMENT</u></strong></h1></</td>     
+       <td width="10%"></td> 
+       <td width="40%"><img src="https://media4.giphy.com/media/TkDNGGis187eUec97m/source.gif" width="300px"></td> 
+    </tr>
+</table>
+ 
+
+<table width="100%">
+<form method="post" action="sendemail.php">
+<tr>
+   <td width="60%">
+<fieldset class="field" width="1000px">
+   <legend>PATIENT DETAIL</legend>
+   Name:<br>
+   <input type="text" name="Name" Placeholder="Name" required=""><br>
+   Gender:<br>
+   <input type="radio" name="Gender" required="" value="Male">Male
+   <input type="radio" name="Gender" required="" value="Female">Female
+   <br>
+   Age:<br>
+   <input  type="number" name="Age" Placeholder="Age" required=""><br>
+   DOB:<br>
+   <input type="date" name="DOB" Placeholder="date of birth" required="">
+   <br>
+   Mobile no:<br>
+   <input type="text" name="MobileNo" Placeholder="phone number" required="">
+   <br>
+   Are you infected with the corona virus?<br>
+   <input type="radio" name="Are"required=""  value="NO"checked>NO
+   <input type="radio" name="Are"required="" value="YES" >YES<br>
+   Email:<br>
+   <input type="Email" name="Email" Placeholder="abc123@gmail.com" required=""><br>
+   Password:<br>
+   <input type="password" name="password"  required=""><br>
+   Massege:<br>
+   <textarea name="Massege" rows="7" col="20" Placeholder="write here......."></textarea><br>
+   Select Doctor:<br>
+   <select name="doctor" required=""><br>
+        <option value="DENTIST<> Dr.Satyarth Shukla">DENTIST<=>Dr.Satyarth Shukla</option><br>
+        <option value="NEUROLOGIS<> Dr.Hemant Kashyap">NEUROLOGIS<=> Dr.Hemant Kashyap</option><br>
+        <option value="FAMILY PHYSICIANS<> Dr.Reena Sehgal">FAMILY PHYSICIANS<=> Dr.Reena Sehgal</option><br>
+        <option value="ONCOLOGISTS<> Dr.Veerendra Mishra">ONCOLOGISTS<=>Dr.Veerendra Mishra</option><br>
+        <option value="PATHOLOGISTs<> Dr.Sarika Mohan">PATHOLOGISTs<=> Dr.Sarika Mohan</option><br>
+        <option value="PLASTIC SURGEONS<> Dr.Anil Yadav">PLASTIC SURGEONS<=> Dr.Anurag Soni</option><br>
+        <option value="MEDICINE SPECIALIST<> Dr.Shreya Chatterjee">MEDICINE SPECIALIST<=>Dr.Shreya Chatterjee</option><br>
+        <option value="UROLOGISTS<> Dr.Pradeep Singhal">UROLOGISTS<=>Dr.Pradeep Singhal</option><br>
+        <input type="datetime-local" min="<?php  echo "date(y-m-d)" ?> "name="oppointmentdateandtime" required="" placeholder="dd-mm-yyyy"><br>
+   <button  name="submit">SUBMIT record</button>
+   <button  >RESET</button>
+</fieldset>
+</form>
+
+
+
+</td>
+
+    <td width= "40%"><img src="https://media0.giphy.com/media/MBOprI1Bfe9oUPP81U/giphy.gif" style="text-align:top" width="470px" ></td></td>
+
+</tr>
+ 
+
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
+
+
+<table>
+<strong><body>
+<a class="float-right" href="logout.php">LOGOUT</a>
+<h1>Welcome <?php echo $_SESSION['username']; ?> </h1>
+</strong>
+</table>  
+  </body>
+</html>
+
+<?php
+    date_default_timezone_set("Asia/Kolkata"); 
+?>
