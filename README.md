@@ -1,5 +1,7 @@
 # doctor_appointment
 
+follow this link to visit my website:http://ayush2000.epizy.com/doctor_appointment-master/log.php
+
 Hospital message system send appointment reminders via email. They create a bridge of communication between your organization and clients. Every aspect is visible,
 and the doctor can look into patients’ history more quickly. Everything is saved on the Xampp server, and doctors can perform their routine tasks more smoothly.
 Systems capture billing data such as insurance payers and patient demographics also performs billing tasks, appointment scheduling, and report generation.
